@@ -1,0 +1,86 @@
+html {
+    transition: all 4s;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+    transition: 4s;
+}
+
+.input_for_img:checked + .mem {
+    display: block;
+}
+
+.input_for_img {
+    display: none;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+
+
+h1 {
+    font-size: 6vw;
+}
+
+.label {
+    font-size: 3vw;  
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+}
+
+.icon {
+    font-size: 4vw; 
+    opacity: 0;
+}
+.icon_close {
+    font-size: 4vw; 
+}
+
+.mem {
+    display: none;
+}
+.mem1 {
+    display: block;
+}
+
+img {
+    margin: 0 auto;
+    max-width: 90%;
+    display: block;
+}
+
+.bayan {
+    color: blue;
+}
+.label1 {
+    color: black;
+}
+.bayan:hover {
+color:black
+} 
+.bayan:hover .icon{
+    opacity:initial;
+    } 
+
+.section1:hover .mem_first {
+    display: block;
+    }  
+.section2:hover .mem_second {
+    display: block;
+}
+.section3:hover .mem_third {
+display: block;
+}
+.section4:hover .mem_fourth {
+display: block;
+} 
+.section5:hover .mem_fifth {
+display: block;
+}   
