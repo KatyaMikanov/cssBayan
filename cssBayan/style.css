@@ -7,9 +7,18 @@ body {
     transition: 4s;
 }
 
-
 .input_for_img:checked ~ .mem > .img {
 height: 25vw;
+}
+
+.input_for_img:checked + .label > .p {
+    color:black;
+}
+
+.input_for_img:checked + .label > .icon {
+    opacity:initial;
+    transform: rotate(45deg);
+    color: black;
 }
 
 .input_for_img {
@@ -26,7 +35,6 @@ h1 {
     font-size: 6vw;
 }
 
-
 .label {
     font-size: 3vw;  
     cursor: pointer;
@@ -40,12 +48,6 @@ align-items: center;
     opacity: 0;
 }
 
- /* .mem {
-    height: 0rem;
-}  */
-
-
-
 img {
     margin: 0 auto;
     max-width: 90%;
@@ -53,25 +55,16 @@ img {
 height: 0vw;
 }
 
- /* .mem {
-     height: 0rem;
- } */
-
  section:hover .img {
     height: 25vw; 
     transition: 2s;
 }  
 
-
-
-
 .bayan {
     color: blue;
     transition: 1s;
 }
-.label1 {
-    color: black;
-}
+
 .bayan:hover {
 color:black;
 transition: 1s;
@@ -80,26 +73,6 @@ transition: 1s;
     opacity:initial;
     transition: 0.5s;
 } 
-
-
-
-/* .section2:hover .mem_second {
-    display: block;
-    transition: 4s;
-}
-.section3:hover .mem_third {
-display: block;
-transition: 4s;
-}
-.section4:hover .mem_fourth {
-display: block;
-transition: 4s;
-} 
-
-.section5:hover .mem_fifth {
-display: block;
-transition: 4s;
-}    */
 
 .section1:hover .icon {
 transform: rotate(45deg);
@@ -125,3 +98,4 @@ transition: 0.1s;
 label {
     cursor: pointer;
 }
+
