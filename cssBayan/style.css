@@ -1,5 +1,5 @@
 html {
-    transition: all 4s;
+    transition: all 2s;
     scroll-behavior: smooth;
 }
 body {
@@ -15,13 +15,11 @@ body {
     display: none;
 }
 
-
 .container {
     margin-left: auto;
     margin-right: auto;
     width: 80%
 }
-
 
 h1 {
     font-size: 6vw;
@@ -39,15 +37,9 @@ align-items: center;
     font-size: 4vw; 
     opacity: 0;
 }
-.icon_close {
-    font-size: 4vw; 
-}
 
 .mem {
     display: none;
-}
-.mem1 {
-    display: block;
 }
 
 img {
@@ -58,29 +50,58 @@ img {
 
 .bayan {
     color: blue;
+    transition: 1s;
 }
 .label1 {
     color: black;
 }
 .bayan:hover {
-color:black
+color:black;
+transition: 1s;
 } 
 .bayan:hover .icon{
     opacity:initial;
-    } 
+    transition: 0.5s;
+} 
 
 .section1:hover .mem_first {
     display: block;
-    }  
+    transition: 4s;
+}  
 .section2:hover .mem_second {
     display: block;
+    transition: 4s;
 }
 .section3:hover .mem_third {
 display: block;
+transition: 4s;
 }
 .section4:hover .mem_fourth {
 display: block;
+transition: 4s;
 } 
 .section5:hover .mem_fifth {
 display: block;
+transition: 4s;
 }   
+
+.section1:hover .icon {
+transform: rotate(45deg);
+transition: 0.1s;
+} 
+.section2:hover .icon {
+transform: rotate(45deg);
+transition: 0.1s;
+}
+.section3:hover .icon {
+    transform: rotate(45deg);
+    transition: 0.1s;
+}
+.section4:hover .icon {
+    transform: rotate(45deg);
+    transition: 0.1s;
+}
+.section5:hover .icon {
+    transform: rotate(45deg);
+    transition: 0.1s;
+}
