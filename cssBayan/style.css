@@ -7,8 +7,9 @@ body {
     transition: 4s;
 }
 
-.input_for_img:checked + .mem {
-    display: block;
+
+.input_for_img:checked ~ .mem > .img {
+height: 25vw;
 }
 
 .input_for_img {
@@ -25,6 +26,7 @@ h1 {
     font-size: 6vw;
 }
 
+
 .label {
     font-size: 3vw;  
     cursor: pointer;
@@ -38,15 +40,30 @@ align-items: center;
     opacity: 0;
 }
 
-.mem {
-    display: none;
-}
+ /* .mem {
+    height: 0rem;
+}  */
+
+
 
 img {
     margin: 0 auto;
     max-width: 90%;
     display: block;
+height: 0vw;
 }
+
+ /* .mem {
+     height: 0rem;
+ } */
+
+ section:hover .img {
+    height: 25vw; 
+    transition: 2s;
+}  
+
+
+
 
 .bayan {
     color: blue;
@@ -64,11 +81,9 @@ transition: 1s;
     transition: 0.5s;
 } 
 
-.section1:hover .mem_first {
-    display: block;
-    transition: 4s;
-}  
-.section2:hover .mem_second {
+
+
+/* .section2:hover .mem_second {
     display: block;
     transition: 4s;
 }
@@ -80,10 +95,11 @@ transition: 4s;
 display: block;
 transition: 4s;
 } 
+
 .section5:hover .mem_fifth {
 display: block;
 transition: 4s;
-}   
+}    */
 
 .section1:hover .icon {
 transform: rotate(45deg);
@@ -104,4 +120,8 @@ transition: 0.1s;
 .section5:hover .icon {
     transform: rotate(45deg);
     transition: 0.1s;
+}
+
+label {
+    cursor: pointer;
 }
