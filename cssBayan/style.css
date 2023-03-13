@@ -1,0 +1,102 @@
+html {
+    transition: all 2s;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+    transition: 4s;
+}
+
+.input_for_img:checked ~ .mem > .img {
+height: 25vw;
+}
+
+.input_for_img:checked + .label > .p {
+    color:black;
+}
+
+.input_for_img:checked + .label > .icon {
+    opacity:initial;
+    transform: rotate(45deg);
+    color: black;
+}
+
+.input_for_img {
+    display: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
+
+h1 {
+    font-size: 6vw;
+}
+
+.label {
+    font-size: 3vw;  
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+}
+
+.icon {
+    font-size: 4vw; 
+    opacity: 0;
+}
+
+img {
+    margin: 0 auto;
+    max-width: 90%;
+    display: block;
+height: 0vw;
+transition: 2s;
+}
+
+ section:hover .img {
+    height: 25vw; 
+    transition: 2s;
+}  
+
+.bayan {
+    color: blue;
+    transition: 1s;
+}
+
+.bayan:hover {
+color:black;
+transition: 1s;
+} 
+.bayan:hover .icon{
+    opacity:initial;
+    transition: 0.5s;
+} 
+
+.section1:hover .icon {
+transform: rotate(45deg);
+transition: 0.1s;
+} 
+.section2:hover .icon {
+transform: rotate(45deg);
+transition: 0.1s;
+}
+.section3:hover .icon {
+    transform: rotate(45deg);
+    transition: 0.1s;
+}
+.section4:hover .icon {
+    transform: rotate(45deg);
+    transition: 0.1s;
+}
+.section5:hover .icon {
+    transform: rotate(45deg);
+    transition: 0.1s;
+}
+
+label {
+    cursor: pointer;
+}
+
